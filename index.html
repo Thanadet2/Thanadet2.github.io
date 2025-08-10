@@ -15,7 +15,7 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
             min-height: 100vh;
         }
 
@@ -30,9 +30,9 @@
             position: fixed;
             top: 0;
             width: 100%;
-            background: rgba(255, 255, 255, 0.95);
+            background: rgba(20, 30, 50, 0.95);
             backdrop-filter: blur(10px);
-            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
             z-index: 1000;
             transition: all 0.3s ease;
         }
@@ -47,7 +47,7 @@
         .logo {
             font-size: 1.5rem;
             font-weight: bold;
-            color: #667eea;
+            color: #00d4ff;
         }
 
         nav ul {
@@ -58,14 +58,14 @@
 
         nav a {
             text-decoration: none;
-            color: #333;
+            color: #ffffff;
             font-weight: 500;
             transition: color 0.3s ease;
             position: relative;
         }
 
         nav a:hover {
-            color: #667eea;
+            color: #00d4ff;
         }
 
         nav a::after {
@@ -75,7 +75,7 @@
             height: 2px;
             bottom: -5px;
             left: 0;
-            background: #667eea;
+            background: #00d4ff;
             transition: width 0.3s ease;
         }
 
@@ -131,18 +131,18 @@
         /* Sections */
         section {
             padding: 80px 0;
-            background: white;
+            background: #1e2749;
         }
 
         section:nth-child(even) {
-            background: #f8f9fa;
+            background: #252d4a;
         }
 
         h2 {
             text-align: center;
             font-size: 2.5rem;
             margin-bottom: 3rem;
-            color: #333;
+            color: #ffffff;
             position: relative;
         }
 
@@ -151,7 +151,7 @@
             position: absolute;
             width: 50px;
             height: 3px;
-            background: linear-gradient(45deg, #667eea, #764ba2);
+            background: linear-gradient(45deg, #00d4ff, #ff6b6b);
             bottom: -10px;
             left: 50%;
             transform: translateX(-50%);
@@ -169,7 +169,7 @@
             width: 300px;
             height: 300px;
             border-radius: 50%;
-            background: linear-gradient(45deg, #667eea, #764ba2);
+            background: linear-gradient(45deg, #00d4ff, #ff6b6b);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -181,7 +181,7 @@
         .about-text p {
             margin-bottom: 1.5rem;
             font-size: 1.1rem;
-            color: #666;
+            color: #c7d2fe;
         }
 
         /* Skills Section */
@@ -192,23 +192,24 @@
         }
 
         .skill-card {
-            background: white;
+            background: #2a3355;
             padding: 2rem;
             border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
             text-align: center;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid #3a4063;
         }
 
         .skill-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 20px 40px rgba(0, 212, 255, 0.2);
         }
 
         .skill-icon {
             width: 80px;
             height: 80px;
-            background: linear-gradient(45deg, #667eea, #764ba2);
+            background: linear-gradient(45deg, #00d4ff, #ff6b6b);
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -216,6 +217,15 @@
             margin: 0 auto 1rem;
             color: white;
             font-size: 2rem;
+        }
+
+        .skill-card h3 {
+            color: #ffffff;
+            margin-bottom: 1rem;
+        }
+
+        .skill-card p {
+            color: #c7d2fe;
         }
 
         /* Portfolio Section */
@@ -226,21 +236,22 @@
         }
 
         .portfolio-item {
-            background: white;
+            background: #2a3355;
             border-radius: 15px;
             overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid #3a4063;
         }
 
         .portfolio-item:hover {
             transform: translateY(-10px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 20px 40px rgba(0, 212, 255, 0.2);
         }
 
         .portfolio-image {
             height: 200px;
-            background: linear-gradient(45deg, #667eea, #764ba2);
+            background: linear-gradient(45deg, #00d4ff, #ff6b6b);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -254,11 +265,11 @@
 
         .portfolio-item h3 {
             margin-bottom: 1rem;
-            color: #333;
+            color: #ffffff;
         }
 
         .portfolio-item p {
-            color: #666;
+            color: #c7d2fe;
             margin-bottom: 1rem;
         }
 
@@ -273,7 +284,7 @@
             content: '';
             position: absolute;
             width: 2px;
-            background: #667eea;
+            background: #00d4ff;
             top: 0;
             bottom: 0;
             left: 50%;
@@ -293,8 +304,8 @@
             width: 20px;
             height: 20px;
             right: -10px;
-            background: white;
-            border: 3px solid #667eea;
+            background: #2a3355;
+            border: 3px solid #00d4ff;
             top: 15px;
             border-radius: 50%;
         }
@@ -313,20 +324,25 @@
 
         .timeline-content {
             padding: 20px;
-            background: white;
+            background: #2a3355;
             border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            border: 1px solid #3a4063;
         }
 
         .timeline-content h3 {
-            color: #667eea;
+            color: #00d4ff;
             margin-bottom: 0.5rem;
         }
 
         .timeline-content .date {
-            color: #999;
+            color: #9ca3af;
             font-size: 0.9rem;
             margin-bottom: 1rem;
+        }
+
+        .timeline-content p {
+            color: #c7d2fe;
         }
 
         /* Contact Section */
@@ -337,10 +353,16 @@
         }
 
         .contact-info {
-            background: white;
+            background: #2a3355;
             padding: 2rem;
             border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            border: 1px solid #3a4063;
+        }
+
+        .contact-info h3 {
+            color: #ffffff;
+            margin-bottom: 2rem;
         }
 
         .contact-item {
@@ -352,7 +374,7 @@
         .contact-icon {
             width: 50px;
             height: 50px;
-            background: linear-gradient(45deg, #667eea, #764ba2);
+            background: linear-gradient(45deg, #00d4ff, #ff6b6b);
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -361,11 +383,26 @@
             margin-right: 1rem;
         }
 
+        .contact-item h4 {
+            color: #00d4ff;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-item p {
+            color: #c7d2fe;
+        }
+
         .contact-form {
-            background: white;
+            background: #2a3355;
             padding: 2rem;
             border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            border: 1px solid #3a4063;
+        }
+
+        .contact-form h3 {
+            color: #ffffff;
+            margin-bottom: 2rem;
         }
 
         .form-group {
@@ -375,7 +412,7 @@
         .form-group label {
             display: block;
             margin-bottom: 0.5rem;
-            color: #333;
+            color: #ffffff;
             font-weight: 500;
         }
 
@@ -383,16 +420,23 @@
         .form-group textarea {
             width: 100%;
             padding: 12px;
-            border: 2px solid #e1e5e9;
+            border: 2px solid #3a4063;
             border-radius: 8px;
             font-size: 1rem;
             transition: border-color 0.3s ease;
+            background: #1e2749;
+            color: #ffffff;
         }
 
         .form-group input:focus,
         .form-group textarea:focus {
             outline: none;
-            border-color: #667eea;
+            border-color: #00d4ff;
+        }
+
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: #9ca3af;
         }
 
         /* Footer */
@@ -411,7 +455,7 @@
             display: inline-block;
             width: 40px;
             height: 40px;
-            background: #667eea;
+            background: #00d4ff;
             color: white;
             text-decoration: none;
             border-radius: 50%;
@@ -423,7 +467,7 @@
         }
 
         .social-links a:hover {
-            background: #764ba2;
+            background: #ff6b6b;
         }
 
         /* Animations */
@@ -484,7 +528,7 @@
     <!-- Navigation -->
     <nav>
         <div class="container">
-            <div class="logo">Your Name</div>
+            <div class="logo">ธนเดช สารสูตรดำรง</div>
             <ul>
                 <li><a href="#home">หน้าแรก</a></li>
                 <li><a href="#about">เกี่ยวกับ</a></li>
@@ -499,7 +543,7 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1>สวัสดี ฉันคือ [ชื่อของคุณ]</h1>
+            <h1>สวัสดี ฉันคือ ธนเดช สารสูตรดำรง</h1>
             <p>นักพัฒนาเว็บ | นักออกแบบ | นักสร้างสรรค์</p>
             <a href="#contact" class="btn">ติดต่อฉัน</a>
         </div>
@@ -514,8 +558,7 @@
                     👤
                 </div>
                 <div class="about-text">
-                    <p>สวัสดีครับ/ค่ะ ผม/ดิฉัน [ชื่อของคุณ] เป็นนักพัฒนาเว็บและนักออกแบบที่มีประสบการณ์มากกว่า X ปี 
-                    ผม/ดิฉันมีความหลงใหลในการสร้างสรรค์ผลงานที่สวยงามและใช้งานได้จริง</p>
+                    <p>ผมนายธนเดช สารสูตรดำรง</p>
                     
                     <p>ผม/ดิฉันเชี่ยวชาญในด้านการพัฒนา Front-end และ Back-end development รวมถึงการออกแบบ UI/UX 
                     ที่สร้างประสบการณ์ที่ดีให้กับผู้ใช้งาน</p>
@@ -530,42 +573,52 @@
     <!-- Skills Section -->
     <section id="skills">
         <div class="container">
-            <h2>ทักษะของฉัน</h2>
+            <h2>ความสามารถและสิ่งที่ชอบ</h2>
             <div class="skills-grid">
                 <div class="skill-card">
                     <div class="skill-icon">💻</div>
-                    <h3>Web Development</h3>
-                    <p>HTML, CSS, JavaScript, React, Vue.js, Node.js</p>
+                    <h3>มีทักษะภาษาคอมพิวเตอร์</h3>
+                    <p>Python,html</p>
                 </div>
                 <div class="skill-card">
                     <div class="skill-icon">🎨</div>
-                    <h3>UI/UX Design</h3>
-                    <p>Figma, Adobe XD, Photoshop, Illustrator</p>
+                    <h3>มีความคิดสร้างสรรค์</h3>
+                    <p>การสร้างสรรค์ การออกแบบและการประยุกค์</p>
                 </div>
                 <div class="skill-card">
                     <div class="skill-icon">📱</div>
-                    <h3>Mobile Development</h3>
+                    <h3>การเขียนโปรแกรม</h3>
                     <p>React Native, Flutter, Swift, Kotlin</p>
                 </div>
                 <div class="skill-card">
                     <div class="skill-icon">🗄️</div>
-                    <h3>Database</h3>
+                    <h3>ฝึกเขียนโปรแกรม</h3>
                     <p>MySQL, PostgreSQL, MongoDB, Firebase</p>
                 </div>
                 <div class="skill-card">
                     <div class="skill-icon">☁️</div>
-                    <h3>Cloud Services</h3>
-                    <p>AWS, Google Cloud, Azure, Vercel</p>
+                    <h3>ศึกษาการเขียนโปรแกรม</h3>
+                    <p>การเขียน Python Java Html</p>
                 </div>
                 <div class="skill-card">
                     <div class="skill-icon">🔧</div>
-                    <h3>Tools & Others</h3>
-                    <p>Git, Docker, Linux, CI/CD</p>
+                    <h3>การใช้โปรแกรม</h3>
+                    <p>PowerPoint,Word,Excel</p>
                 </div>
             </div>
         </div>
     </section>
-
+     <section id="skills">
+        <div class="container">
+            <h2>ด้านบุคลิกและการทำงาน</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">💻</div>
+                    <h3>มีทักษะภาษาคอมพิวเตอร์</h3>
+                    <p>Python,html</p>
+                </div>
+            </div>
+        </div>
     <!-- Portfolio Section -->
     <section id="portfolio">
         <div class="container">
@@ -659,21 +712,21 @@
                         <div class="contact-icon">📧</div>
                         <div>
                             <h4>อีเมล</h4>
-                            <p>your.email@gmail.com</p>
+                            <p>tinadej2550@gmail.com</p>
                         </div>
                     </div>
                     <div class="contact-item">
                         <div class="contact-icon">📱</div>
                         <div>
                             <h4>โทรศัพท์</h4>
-                            <p>+66 XX XXX XXXX</p>
+                            <p>064-101-7212</p>
                         </div>
                     </div>
                     <div class="contact-item">
                         <div class="contact-icon">📍</div>
                         <div>
                             <h4>ที่อยู่</h4>
-                            <p>กรุงเทพมหานคร ประเทศไทย</p>
+                            <p>ต.มะขามคู่ อ.นิคมพัฒนา จ.ระยอง</p>
                         </div>
                     </div>
                     <div class="contact-item">
@@ -719,7 +772,7 @@
                 <a href="#">💼</a>
                 <a href="#">📧</a>
             </div>
-            <p>&copy; 2024 [ชื่อของคุณ]. สงวนลิขสิทธิ์.</p>
+            <p>&copy; 2024 ธนเดช สารสูตรดำรง. สงวนลิขสิทธิ์.</p>
         </div>
     </footer>
 
@@ -749,9 +802,9 @@
         window.addEventListener('scroll', function() {
             const nav = document.querySelector('nav');
             if (window.scrollY > 100) {
-                nav.style.background = 'rgba(255, 255, 255, 0.98)';
+                nav.style.background = 'rgba(20, 30, 50, 0.98)';
             } else {
-                nav.style.background = 'rgba(255, 255, 255, 0.95)';
+                nav.style.background = 'rgba(20, 30, 50, 0.95)';
             }
         });
 
